@@ -16,6 +16,7 @@
     bottom: 110px;
     position: absolute;
     width: 150px;
+    animation: 1s sonic_animation infinite;
 }
 
 .eggman {
@@ -23,6 +24,7 @@
     position: absolute;
     bottom: 110px;
     right: 0;
+    animation: 2s eggman_animation infinite linear;
 }
 
 .fundo {
@@ -30,3 +32,20 @@
     height: 100%;
 }
 
+@keyframes  eggman_animation {
+    0% {
+        right: -250px;
+    } 100% {
+        right: 100%;
+    }
+}
+
+@keyframes sonic_animation {
+    0% {
+        bottom: 110px;
+    } 50% {
+        bottom: 250px;
+    } 100% {
+        bottom: 110px;
+    }
+}
