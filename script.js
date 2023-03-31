@@ -4,7 +4,7 @@ const jump = () => {
     sonic.classList.add("jump");
     setTimeout(() => {
         sonic.classList.remove("jump");
-    }, 900)
+    }, 900);
 }
 
 document.addEventListener("click", jump);
